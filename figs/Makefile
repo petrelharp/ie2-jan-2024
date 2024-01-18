@@ -1,5 +1,5 @@
 SHELL := /bin/bash
 
-figs :
+figs : pika_figure.png monarch_figure.png
 
 include ../rules.mk

@@ -57,6 +57,9 @@ SLIDES_OPTS = $(REVEALJS_OPTS)
 %.pdf : %.ink.svg
 	inkscape $< --export-pdf=$@
 
+%.pdf : %.svg
+	inkscape $< --export-pdf=$@
+
 %.svg : %.pdf
 	inkscape $< --export-plain-svg=$@
 
