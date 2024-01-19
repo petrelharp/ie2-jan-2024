@@ -41,7 +41,7 @@
 
   div.bottomright { position: fixed; bottom: 0; right: 0; }
 
-  .caption p { font-size: 75%; font-style: italic; color: #0006; clear: both; }
+  .caption p { font-size: 75%; font-style: italic; color: #0006; clear: both; float: right; }
 
   .greyed { color: #0004; }
 
@@ -100,6 +100,26 @@ href="https://github.com/petrelharp/ie2-jan-2024">github:petrelharp/ie2-jan-2024
 
 </section>
 <section id="section" class="slide level2"
+data-background-image="figs/huckleberry_sisters.png"
+data-background-position="right" data-background-size="50%">
+<h2 data-background-image="figs/huckleberry_sisters.png"
+data-background-position="right" data-background-size="50%"></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Some spatial processes</p>
+<ul>
+<li><p>range expansion</p></li>
+<li><p>density dependence</p></li>
+<li><p>coexistence</p></li>
+<li><p>speciation</p></li>
+<li><p>local adaptation</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+
+</div>
+</div>
+</section>
+<section id="section-1" class="slide level2"
 data-background-image="figs/oregon_geological_map.png">
 <h2 data-background-image="figs/oregon_geological_map.png"></h2>
 </section>
@@ -117,26 +137,6 @@ data-background-size="70%">Individual-based simulations</h2>
 <li>interactions</li>
 <li>ages, heritable traits</li>
 <li>whole genomes</li>
-</ul>
-</div><div class="column" style="width:50%;">
-
-</div>
-</div>
-</section>
-<section id="section-1" class="slide level2"
-data-background-image="figs/huckleberry_sisters.png"
-data-background-position="right" data-background-size="50%">
-<h2 data-background-image="figs/huckleberry_sisters.png"
-data-background-position="right" data-background-size="50%"></h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Some spatial processes</p>
-<ul>
-<li><p>range expansion</p></li>
-<li><p>density dependence</p></li>
-<li><p>coexistence</p></li>
-<li><p>speciation</p></li>
-<li><p>local adaptation</p></li>
 </ul>
 </div><div class="column" style="width:50%;">
 
@@ -264,7 +264,7 @@ style="width:100.0%" /></p>
 <h2>Warming pikas</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Pikas: (Chris Smith)</p>
+<p><em>Ochotona princeps</em>: (Chris Smith)</p>
 <ul>
 <li>266 km<span class="math inline">\(^2\)</span> part of RMNP</li>
 <li>Beverton-Holt density dependence on mortality</li>
@@ -278,12 +278,17 @@ style="width:100.0%" /></p>
 <li>pikas die if outside of -5°C to 28°C</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<figure>
-<img data-src="figs/elevation_screenshot.png"
-alt="elevation map of part of Rocky Mountain National Park" />
-<figcaption aria-hidden="true">elevation map of part of Rocky Mountain
-National Park</figcaption>
-</figure>
+<div class="centered">
+<p><img data-src="figs/pika_remi_bigonneau.png" style="width:70.0%"
+alt="a pika, CCA-SA by Rémi Bigonneau" /> <img
+data-src="figs/elevation_screenshot.png"
+alt="elevation map of part of Rocky Mountain National Park" /></p>
+</div>
+<div class="caption">
+<p>pika by <a
+href="https://commons.wikimedia.org/wiki/File:Ochotona_rutila.JPG">Rémi
+Bigonneau, CCA-SA</a></p>
+</div>
 </div>
 </div>
 </section>
@@ -304,6 +309,17 @@ National Park</figcaption>
 <li>adults mate, oviposit in nearby water</li>
 <li>water availability fluctuates seasonally based on a map</li>
 </ul>
+<figure>
+<img data-src="figs/Anopheles_gambiae_Mosquito.jpg" style="width:50.0%"
+alt="Anopheles gambiae, by Muhammad Mahdi Karim, GNU FDL 1.2" />
+<figcaption aria-hidden="true">Anopheles gambiae, by Muhammad Mahdi
+Karim, GNU FDL 1.2</figcaption>
+</figure>
+<div class="caption">
+<p>photo by <a
+href="https://commons.wikimedia.org/wiki/File:Anopheles_gambiae_Mosquito.jpg">Muhammad
+Mahdi Karim, GNU FDL 1.2</a></p>
+</div>
 </div><div class="column" style="width:50%;">
 <figure>
 <img data-src="figs/mosquito_map.png"
@@ -334,6 +350,17 @@ alt="population size through time" />
 movement</li>
 <li>reached 120 million simulated toads in simulated 2012</li>
 </ul>
+<figure>
+<img data-src="figs/Cane_toad_Barro_Colorado_island.jpg"
+style="width:50.0%" alt="Cane toad by brian.gratwicke, CCA2.0" />
+<figcaption aria-hidden="true">Cane toad by brian.gratwicke,
+CCA2.0</figcaption>
+</figure>
+<div class="caption">
+<p>toad by <a
+href="https://www.flickr.com/photos/briangratwicke/">brianggratwicke</a>,
+CCA2.0</p>
+</div>
 </div><div class="column" style="width:50%;">
 <figure>
 <img data-src="figs/toads_today.png"
@@ -371,18 +398,14 @@ expanson</figcaption>
 <li>theory: Peter Ralph and Alison Etheridge</li>
 </ul>
 </div><div class="column" style="width:60%;">
-<p><em>Simulation methods:</em></p>
-<ul>
-<li>Ben Haller (<a
-href="https://messerlab.org/SLiM">messerlab.org/SLiM</a>)</li>
-<li>Jerome Kelleher (<a
-href="https://tskit.dev/msprime">tskit.dev/msprime</a>)</li>
-<li>the tskit consortium (<a
-href="https://tskit.dev/">tskit.dev</a>)</li>
-</ul>
-<p><img data-src="figs/slim_logo.png" style="width:50.0%"
-alt="SLiM logo" /> <img data-src="figs/tskit_logo.png"
-style="width:45.0%" alt="tskit logo" /></p>
+<p><a href="https://messerlab.org/SLiM"><img
+data-src="figs/slim_logo.png" style="width:50.0%" alt="SLiM logo" /></a>
+<a href="https://tskit.dev/"><img data-src="figs/tskit_logo.png"
+style="width:45.0%" alt="tskit logo" /></a></p>
+<figure>
+<img data-src="figs/tea_time_2022.jpg" alt="the kr-colab in 2022" />
+<figcaption aria-hidden="true">the kr-colab in 2022</figcaption>
+</figure>
 </div>
 </div>
 </section>

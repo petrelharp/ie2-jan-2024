@@ -17,7 +17,7 @@ div.vcentered { display: flex; align-items: center; }
 
 div.bottomright { position: fixed; bottom: 0; right: 0; }
 
-.caption p { font-size: 75%; font-style: italic; color: #0006; clear: both; }
+.caption p { font-size: 75%; font-style: italic; color: #0006; clear: both; float: right; }
 
 .greyed { color: #0004; }
 
